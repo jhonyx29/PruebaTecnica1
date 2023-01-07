@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static System.Windows.Forms.DataFormats;
 
 namespace PruebaTecnica
 {
@@ -19,14 +20,14 @@ namespace PruebaTecnica
 
         private void btnPrueba1_Click(object sender, EventArgs e)
         {
-            ApplicationConfiguration.Initialize();
-            Application.Run(new Form1());
+            Form1 frm = new Form1();
+            frm.Show();
         }
 
         private void btnPrueba2_Click(object sender, EventArgs e)
         {
-            ApplicationConfiguration.Initialize();
-            Application.Run(new Form2());
+            Form2 frm = new Form2();
+            frm.Show();
         }
     }
 }
